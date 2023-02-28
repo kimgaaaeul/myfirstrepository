@@ -1,0 +1,14 @@
+    body {
+      text-align: center;
+      font-family: 'Gugi', cursive;
+    }
+    .naver {
+      color: #04cf5c;
+    }
+    #btn{
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 0px solid black;
+    }
+
+
