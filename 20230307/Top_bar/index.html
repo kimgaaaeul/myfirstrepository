@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+    }
+    html, body {
+      height: 100%;
+    }/*height 100% 쓰는 경우는 ?*/
+    #top_bar {
+      background-color: #000;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+
+      text-align: center;
+      line-height: 50px;
+      height: 50px;
+    } 
+    #bottom_bar {
+      background-color: #000;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    } /* 포지션 픽스드와 그 외 좌표값*/
+    #left_bar {
+      background: beige;
+      position: fixed;
+      width: 50px;
+
+      top: 50px; 
+      bottom: 50px;
+      left: 0;
+
+      text-align: center;
+    }
+    #right_bar {
+      background: beige;
+      position: fixed;
+      width: 50px;
+
+      top: 50px; 
+      bottom: 50px;
+      right: 0;
+
+      text-align: center;
+    }
+
+    article {
+      padding: 20px 80px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="top_bar">
+    <h1>Top_bar</h1>
+  </div>
+  <div id="bottom_bar">
+    <h1>bottom_bar</h1>
+  </div>
+  <div id="left_bar">
+    <h1>A</h1>
+  </div>
+  <div id="right_bar">
+    <h1>B</h1>
+  </div>
+  <article>
+    <h1>Lorem ipsum, dolor sit amit</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem magni expedita fuga libero, perspiciatis nulla rem quibusdam eveniet quo adipisci commodi cum, laborum, neque sit incidunt saepe corporis consectetur aperiam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem magni expedita fuga libero, perspiciatis nulla rem quibusdam eveniet quo adipisci commodi cum, laborum, neque sit incidunt saepe corporis consectetur aperiam.</p> <br />
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem magni expedita fuga libero, perspiciatis nulla rem quibusdam eveniet quo adipisci commodi cum, laborum, neque sit incidunt saepe corporis consectetur aperiam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem magni expedita fuga libero, perspiciatis nulla rem quibusdam eveniet quo adipisci commodi cum, laborum, neque sit incidunt saepe corporis consectetur aperiam.</p> <br />
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem magni expedita fuga libero, perspiciatis nulla rem quibusdam eveniet quo adipisci commodi cum, laborum, neque sit incidunt saepe corporis consectetur aperiam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem magni expedita fuga libero, perspiciatis nulla rem quibusdam eveniet quo adipisci commodi cum, laborum, neque sit incidunt saepe corporis consectetur aperiam.</p> <br />
+  </article>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/* 프로필영역 */
+h1 {
+  text-align: center;
+  color: red;
+}
+
+#btn {
+  width: 1000px; 
+  background-color: antiquewhite;
+  text-align: center;
+}
