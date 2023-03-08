@@ -1,0 +1,62 @@
+@import url('/basic\ code/reset.css');
+body {
+  width: 200px; 
+  margin: 200px auto;
+  -webkit-perspective: 1000;
+  /* perspective 는 원근법.숫자 크면 클수록 입체감 커져 ? */
+}
+section {
+  width: 200px; height: 200px; 
+  position: relative;
+  animation: rint 3s linear -1s infinite alternate;
+  /* linear alternate로 하면 여러 방향으로 돌아 */
+
+  transform-style: preserve-3d;
+}
+/* 키프레임 없으면 애니메이션 의미없다 */
+@keyframes rint {
+  from {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to{
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+div  {
+  position: absolute;
+  left: 0; top: 0;
+
+  width: 200px; height: 200px;
+  backface-visibility:visible;
+  /*  3차원에 투과되어보이게 */
+  opacity: 0.3;
+}
+
+/* Left Side */
+div:nth-child(1) {
+  transform: rotateY(0deg) translate3d(0, 0, 100px);
+  background-color: red;
+}
+div:nth-child(2) {
+  transform: rotateY(90deg) translate3d(0, 0, 100px);
+  background-color: green;
+}
+div:nth-child(3) {
+  transform: rotateY(180deg) translate3d(0, 0, 100px);
+  background-color: blue;
+}
+div:nth-child(4) {
+  transform: rotateY(270deg) translate3d(0, 0, 100px);
+  background-color: yellow;
+}
+
+
+/* Cover Side */
+div:nth-child(5) {
+  transform: rotateX(90deg) translate3d(0, 0, 100px);
+  background-color: brown;
+}
+div:nth-child(6) {
+  transform: rotateX(270deg) translate3d(0, 0, 100px);
+  background-color: pink;
+}

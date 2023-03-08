@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #graph  {
+      border: 3px solid black; 
+      width: 710px;
+    }
+
+    .bar {
+      width: 30px; height: 60px;
+      background-color: orange;
+      margin: 5px;
+
+      transition-property: background-color,width;
+      transition-duration: 1s, 5s;
+    }
+
+    #graph:hover .bar {
+      width: 700px;
+    }
+    .bar:nth-child(1) {
+      transition-delay: 0s;
+      transition-timing-function: linear;
+      width: 100px;
+      background-color: red;
+    }   
+    .bar:nth-child(2) {
+      transition-delay: 1s;
+      transition-timing-function: ease;
+      width: 300px;
+      background-color: blue;
+    }
+    .bar:nth-child(3) {
+      transition-delay: 2s;
+      transition-timing-function: ease-in;
+      width: 400px;
+      background-color: green;
+    }
+    .bar:nth-child(4) {
+      transition-delay: 3s;
+      transition-timing-function: ease-in-out;
+      width: 200px;
+      background-color: yellow;
+    }
+    .bar:nth-child(5) {
+      transition-delay: 4s;
+      transition-timing-function: ease-out;
+      width: 400px;
+      background-color: pink;
+    }
+      /* timing function
+      linear  일정한속도
+      ease 처음에는 빠르게 시작하여 도착 지점에서는 완만
+      ease-in 처음에는 천천히 도착지점에선 빠르게
+      ease-in-out 처음과 끝에서 완만 중간에서 빠름
+      ease-out 첫스타트는 빠른데 도착할수록 천천히 */
+
+      /* http://127.0.0.1:5500/20230308/timing_function%20copy/index.html */
+  </style>
+</head>
+<body>
+<h1>CSS3 Transition</h1>
+<div id="graph">
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+/* 프린트 화면에서 다르게 보임 */
+h1 {
+  text-align: center;
+  color: red;
+}

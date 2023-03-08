@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+    }
+    body {
+      position: relative;
+    }
+    #box  {
+      position: absolute;
+      width: 200px; height: 200px;
+      border-radius: 100px; 
+      text-align: center;
+      line-height: 200px;
+
+        /*  animation-name: rint;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out; 쉽게 한줄로 표현은 아래처럼*/
+
+      background: linear-gradient(#CB60B3 0%, #DB36A4 100%);
+      animation: rint 2s linear none infinite alternate;
+
+
+    }
+    #box:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes rint{
+      from{
+        left: 0;
+        transform: rotate(0deg);
+      }
+      50%{
+
+      }
+      to {
+        left: 500px;
+        transform: rotate(360deg);
+      }
+
+    } 
+    
+
+  </style>
+</head>
+<body>
+  <div id="box">
+    <h1>Rotation</h1>
+  </div>
+</body>
+</html>

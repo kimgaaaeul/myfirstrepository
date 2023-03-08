@@ -1,0 +1,27 @@
+/* 화면 너비  0~767픽셀 */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  html {
+    background-color: red;
+    color: white; font-weight: bold;
+  }
+}
+/* 화면 방향 전환 
+(orientation: landscape) 수평 
+(orientation: portrait) 수직 */
+
+/* 화면 너비  768~959픽셀 */
+@media screen and (min-width: 768px) and (max-width: 959px) and (orientation: landscape) {
+  html {
+    background-color: green;
+    color: white; font-weight: bold;
+  }
+}
+
+/* 화면 너비  960픽셀~ */
+@media screen and (min-width: 960px) {  
+  html {
+    background-color: blue;
+    color: white; font-weight: bold;
+  } 
+}
+/* https://gs.statcounter.com/ - 많이 쓰이는 화면 크키 확인 가능 */
