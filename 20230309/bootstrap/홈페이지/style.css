@@ -1,0 +1,13 @@
+body {
+  padding-top: 70px;
+}
+.box {
+  padding-top: 20px;
+}
+.card-header {
+  background-color: bisque;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
