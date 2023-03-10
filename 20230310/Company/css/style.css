@@ -1,0 +1,26 @@
+@import url('./style.css/reset.css');
+
+body {
+  background-color: antiquewhite;
+}
+
+#main_header {
+  position: relative;
+}
+#main_header .logo {
+  position: absolute;
+  left: 15px; top: 10px; 
+}
+#main_header .login_menu {
+  position: absolute;
+  right: 0; top: 10px;
+}
+
+.login_menu a {
+  display: inline-block;
+  padding-left: 10px;
+  text-align: cemter;
+
+  width: 70px; 
+  color: #000;
+}
